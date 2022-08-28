@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-modern {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    border: none;
+    color: rgb(26, 25, 25);
+    background-color: rgb(191, 204, 230);
+    border-bottom: 1px rgb(78, 94, 146) solid;
+    padding: 12px 20px;
+    border-radius: 7px;
+}
+
+.btn-modern:hover {
+    background-color: rgb(116, 136, 201);
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 0 8px gray;
+    transition: all 0.4s;
+    transform: translateY(-5px);
+}
