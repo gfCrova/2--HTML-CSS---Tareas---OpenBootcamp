@@ -1,0 +1,238 @@
+
+body { 
+    box-sizing: border-box;
+    background-color: rgb(22, 107, 163);
+    margin: 10px;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 300px;
+    max-width: 400px;
+    height: 100vh;
+    box-shadow: 0 0 8px black;
+}
+
+.head-nav { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 40px;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.head-nav span {
+    color: #b1b0b0;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:'Arial Narrow Bold', sans-serif;
+
+}
+
+.head-nav img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: rgb(92, 92, 92);
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a{
+    font-family: cursive;
+    color: gray;
+    text-decoration: none;
+}
+
+.principal {
+    position: relative;
+    left: 30vw;
+    width: 60vw;
+    height: 100vh;
+}
+
+
+.titulo h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: arial,sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+.titulo p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position:relative;
+    margin-bottom: 5rem;
+}
+
+.articulos {
+    background-color: white;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.art1 {
+    background-color: #b1b0b0;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.art2 {
+    background-color: #e78c8c;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.art3 {
+    background-color: #3a74b6;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.art4 {
+    background-color: #b19f50;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #181818;
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer address ul li {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin-right: 30px;
+}
+
+footer address {
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer address  a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+footer address  a:hover {
+    background-color: snow;
+    color:  rgb(39, 38, 38);
+}
+
+@media (max-width: 1400px) {
+    .principal {
+        position: relative;
+        left: 450px;
+        width: 50vw;
+        text-align: center;
+    }
+
+    footer address {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100vw;
+        height: 8vh;
+    }
+    
+    nav .head-nav { 
+        display: inline-flex;
+        flex-direction: row;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+    }
+
+    .head-nav img {
+        max-width: 50px;
+        max-height: 50px;        
+    }
+
+    .head-nav span {
+        padding: 20px 0;
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: inline-flex;
+        position: relative;
+        top: 15px;
+        right: -300px;
+        padding: 2px;
+        margin: 0;
+        font-size: 1rem;
+        border: 2px solid black;
+    }
+
+    .principal {
+        position: relative;
+        top: 60px;
+        left: -20px;
+        width: 100vw;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        height: 5vh;
+    }
+
+    footer address {
+        font-size: 0.6rem;
+        margin-left: -20px;
+    }
+}
