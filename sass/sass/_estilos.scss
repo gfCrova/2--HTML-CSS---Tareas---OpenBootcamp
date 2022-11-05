@@ -1,0 +1,49 @@
+
+@use "mixins";
+
+$bg-color: #f4f2;
+$margin-De-Contenedores: 50px;
+$fontsParrafos: monospace;
+$colorPrincipal: red;
+
+/* TEXTOS */
+
+h1 { 
+    @include mixins.text-mixin();
+}
+
+p {
+    color: $colorPrincipal;
+    font-family: $fontsParrafos;
+}
+
+/* LISTADO DE COMPRAS */
+
+.listado {
+    background-color: bisque;
+    margin: 20px;
+    padding: 10px;
+    ul {
+        background-color: brown;
+        margin: 10px;
+        padding: 20px;
+        li {
+            color: #fff;
+            padding: 30px;
+            background-color: salmon;
+            font-size: 3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            list-style: none;
+
+            &:hover {
+                cursor: grab;
+            }
+
+            &:active {
+                cursor: grabbing;
+                transform: scale(0.9);
+                transition: all 2s;
+            }
+        }
+    }
+}

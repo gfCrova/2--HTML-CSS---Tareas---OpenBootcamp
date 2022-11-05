@@ -1,0 +1,218 @@
+
+/* PRESENTATION */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 15px 15px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+:root {
+    --color1: #74650d;
+    --color2: #2844e4;
+    --color3: #74650d;
+}
+
+
+.present {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+.name1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
+    position: relative;
+    left: 40px;
+    animation: name1 2s normal;
+    background: linear-gradient(var(--color1), var(--color2), var(--color3));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.name1:hover {
+    transform:scale(1.2);
+    transition: all 1s;
+    cursor: none;
+}
+
+@keyframes name1 {
+    from { left: -100% }
+    to { left: 40px; }
+}
+
+.name2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
+    position: relative;
+    top: 25px;
+    animation: name2 1.5s reverse forwards;
+    background: linear-gradient(var(--color1), var(--color2), var(--color3));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.name2:hover {
+    transform:scale(1.2);
+    transition: all 1s;
+    cursor: none;
+}
+
+@keyframes name2 {
+    from { left: 0%; top: 65px;}
+    to { left: 250%; }
+}
+
+.name3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
+    position: relative;
+    top: 35px;
+    animation: name3 2s forwards;
+    background: linear-gradient(var(--color1), var(--color2), var(--color3));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.name3:hover {
+    transform:scale(1.2);
+    transition: all 1s;
+    cursor: none;
+}
+
+@keyframes name3 {
+    from { top: -1400px;}
+    to { top: 130px; left: -60px;}
+}
+
+.linea1 {
+    position: absolute;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #2844e4;
+    border-bottom: 5px solid white;
+    opacity: 0.1;
+    width: 700px;
+    height: 50px;
+    animation: traslación 3s normal forwards;
+}
+
+@keyframes traslación  {
+    0% {
+        transform: translateX(-200%) translateY(350px);
+    }
+    100% {
+        transform: translateX(0) translateY(350px) ;
+    }
+};
+
+/*.linea2 {
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    width: 700px;
+    height: 80px;
+    animation: traslación 4s ease-in 2s forwards;
+}
+
+@keyframes traslación  {
+    0% {
+        transform: translateY(0px) translateX(200%);
+        background-color: black;
+    }
+    25% {
+        transform:  translateY(5px) translateX(0);
+        background-color: beige;
+        border-radius: 10px;
+        width: 250px;
+        margin-left: 0;
+    }
+    50% {
+        transform:  translateY(65px) translateX(0);
+        background-color: orange;
+        border-radius: 10px;
+        width: 300px;
+        margin-left: 150px;
+    }
+    75% {
+        transform:  translateY(135px) translateX(0);
+        background-color: blue;
+        border-radius: 10px;
+        width: 290px;
+        margin-left: 350px;
+    }
+    100% {
+        transform: translateY(-200px) translateX(0);
+    }
+};
+
+.linea3 {
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    width: 700px;
+    height: 80px;
+    animation: traslación 4s ease-in 2s forwards;
+}
+
+@keyframes traslación  {
+    0% {
+        transform: translateY(0px) translateX(200%);
+        background-color: black;
+    }
+    25% {
+        transform:  translateY(5px) translateX(0);
+        background-color: beige;
+        border-radius: 10px;
+        width: 250px;
+        margin-left: 0;
+    }
+    50% {
+        transform:  translateY(65px) translateX(0);
+        background-color: orange;
+        border-radius: 10px;
+        width: 300px;
+        margin-left: 150px;
+    }
+    75% {
+        transform:  translateY(135px) translateX(0);
+        background-color: blue;
+        border-radius: 10px;
+        width: 290px;
+        margin-left: 350px;
+    }
+    100% {
+        transform: translateY(-200px) translateX(0);
+    }
+};
+*/
+.present2 {
+    width: 410px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.dev-name { 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    z-index: 1;
+    position: absolute;
+    top: 560px;
+    left: 130px;
+    animation: dev 5s normal;
+}
+
+@keyframes dev {
+    0% { transform: translateX(-200%) translateY(0); }
+    100% { transform: translateX(0) translateY(0); }
+}

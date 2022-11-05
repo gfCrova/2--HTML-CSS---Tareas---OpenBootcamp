@@ -1,0 +1,59 @@
+
+
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    transition: all 2s cubic-bezier(0.54,-0.52, 1, 0.46);
+}
+
+.padre:hover .hijo{ 
+    transform: translateX(100%);
+}
+
+
+
+
+.mama {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+}
+
+.hija {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    animation: traslación 3s infinite;
+}
+
+.mama:hover .hija {
+    animation-play-state: paused;
+}
+
+@keyframes traslación {
+    0% {
+        background-color: black;
+        transform: translateX(0%) translateY(0%);
+    }
+    25% {
+        transform:  translateX(100%) translateY(0%);
+    }
+    50% {
+        transform:  translateY(100%) translateX(100%);
+    }
+    75% {
+        transform: translateX(0%) translateY(100%);
+    }
+    100% {
+        transform: translateX(0%) translateY(0%);
+        background-color: beige;
+    }
+    
+}

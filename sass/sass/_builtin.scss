@@ -1,0 +1,29 @@
+
+@use "sass:string";
+@use "sass:math";
+
+
+/* FUNCIONES CON TEXTO */
+
+@debug "Hola sass";
+@debug string.index("Helvetica Neue", "Neue");
+
+$string: "Helvetica";
+$newString: string.insert("Helvetica", " Bold", 10);
+
+@debug $newString;
+@debug string.length($newString);
+@debug string.slice($newString, 5, 9);
+
+@debug string.to-upper-case("Roboto Mono");
+@debug string.to-lower-case("Roboto Mono");
+
+@debug string.unique-id();
+
+
+/* FUNCIONES CON NUMERO */
+
+@debug math.$e;
+@debug math.$pi;
+
+@debug math.clamp(0, 256.36, 10);
